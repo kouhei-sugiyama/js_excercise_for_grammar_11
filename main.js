@@ -8,9 +8,9 @@
  */
 
 // ここでcatオブジェクトを作る
-
+const cat = { name: "キャット", age: 9999, sex: "オス" };
 // ここでconsole.logを使ってcatオブジェクトの内容を出力する
-
+console.log("課題1で作ったcatオブジェクト", cat);
 
 /**
  * 課題2: 課題1で作ったcatオブジェクトに次の情報を追加する
@@ -19,9 +19,9 @@
  */
 
 // ここでownerを追加するコードを書く
-
+cat.owner = "kouhei";
 // ここでconsole.logを使ってcatオブジェクトの内容を出力する
-
+console.log("課題2でownerプロパティを追加", cat);
 
 /**
  * 課題3: 課題1で作ったcatオブジェクトの次の情報を更新する
@@ -30,9 +30,9 @@
  */
 
 // ここでageを更新するコードを書く
-
+cat.age = 10000;
 // ここでconsole.logを使ってcatオブジェクトの内容を出力する
-
+console.log("課題3でageプロパティの数値を1足す", cat);
 
 /**
  * 課題4: 課題1で作ったcatオブジェクトから次の情報を削除する
@@ -41,5 +41,6 @@
  */
 
 // ここでownerを削除するコードを書く
-
+delete cat.owner;
 // ここでconsole.logを使ってcatオブジェクトの内容を出力する
+console.log("課題4でownerプロパティを削除する", cat);
